@@ -1,7 +1,10 @@
 Feature: Attacking a monster
-  Background:
-    Given there is a monster
+  Scenario:
+    Given "モンスターA" が現れた
+    When 攻撃した
+    Then モンスターは倒れた
 
-  Scenario: attack the monster
-    When I attack it
-    Then it should die
+  Scenario:
+    Given "モンスターB" が現れた
+    When 攻撃した
+    Then モンスターは倒れた

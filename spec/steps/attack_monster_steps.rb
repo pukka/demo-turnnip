@@ -2,15 +2,16 @@ require "spec_helper"
 require "Monster"
 
 module MonsterSteps
-  step "there is a monster" do
-    @monster = Monster.new
+
+  step ":monster が現れた" do |name|
+    @monster = Monster.new(name)
   end
 
-  step "I attack it" do
-    @monster = Monster.new
+  step "攻撃した" do
+     @monster = Monster.new
   end
 
-  step "it should die" do
+  step "モンスターは倒れた" do
     @monster = Monster.new
   end
 end
